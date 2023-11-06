@@ -49,13 +49,17 @@ public class Main {
         student1.setLastName("Student");
         student1.GPA = 3.0f;
         student1.Major = Major.ART;
-
+        // student1.PrintNames();
         Student student2 = new Student();
+        System.out.println(student2);
+        student1.changeLastNameandMajor("Hegney", Major.IT); //refer to Student.java
+        System.out.println(student1);
+
         // Student student3 = student1;
         // student3.FirstName = "Melissa"; //because student3 points to the same location as student1, it overrides "Eric" as the first name.
         
-        System.out.println(student1.getFirstName() + " " + student1.getLastName());
-        System.out.println(student2);
+        // System.out.println(student1.getFirstName() + " " + student1.getLastName());
+        // System.out.println(student2);
         // System.out.println(student3.FirstName);
     }
 }
