@@ -1,0 +1,3 @@
+enum Seasons {SPRING, SUMMER, FALL, WINTER}
+enum Cart {SHOPPING, TAG, RETURN, SAVEDFORLATER}
+//we could put all enums in this file...
