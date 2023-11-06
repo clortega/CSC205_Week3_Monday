@@ -11,13 +11,14 @@ public class Main {
         SeasonsLogic();
 
         Student student1 = new Student(); //student1 refers to a specific instance or version of the Student class
-        student1.FirstName = "Eric";
-        student1.LastName = "Student";
+        student1.setFirstName("Eric");
+        student1.setLastName("Student");
         student1.GPA = 3.0f;
         student1.Major = Major.ART;
+
         Student student2 = new Student();
-        Student student3 = student1;
-        student3.FirstName = "Melissa"; //because student3 points to the same location as student1, it overrides "Eric" as the first name.
+        // Student student3 = student1;
+        // student3.FirstName = "Melissa"; //because student3 points to the same location as student1, it overrides "Eric" as the first name.
         
         Car car1 = new Car();
         car1.Mileage = 50000;
@@ -33,10 +34,9 @@ public class Main {
         car3.CarMake = Make.GMC;
 
 
-        System.out.println(student1.FirstName);
-        System.out.println(student2.FirstName);
-        System.out.println(student3.FirstName);
-
+        System.out.println(student1.getFirstName() + " " + student1.getLastName());
+        System.out.println(student2);
+        // System.out.println(student3.FirstName);
     }
 
     public static void SeasonsLogic() {
